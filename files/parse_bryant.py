@@ -76,6 +76,7 @@ def process(status):
     output.update({'operation.humidity.'+ status['humid']: state})
     output.update({'operation.temperature.'+status['mode']: 1})
     output.update({'temperature.outdoor': status['oat']})
+    output.update({'filter.' ****************
  
     for zone in status['zones']['zone']:
         if zone['enabled'] == 'on':
